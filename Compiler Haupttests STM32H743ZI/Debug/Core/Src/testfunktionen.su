@@ -1,0 +1,5 @@
+testfunktionen.c:13:6:Test_Matrix_Dot_Produkt	824	static
+testfunktionen.c:41:6:Test_Switch_Case_Seq	24	static
+testfunktionen.c:84:6:Test_Switch_Case_Nicht_Seq	24	static
+testfunktionen.c:127:5:Test_Dividier_Zufaellige_Int	24	static
+testfunktionen.c:134:7:Test_Dividier_Zufaellige_Float	24	static
