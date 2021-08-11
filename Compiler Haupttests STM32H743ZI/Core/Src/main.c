@@ -97,7 +97,7 @@ int main(void)
 	for(int i = 0; i < 100; i++)
 	{
 //      Testfunktionsaufrufe hier hinzufügen
-		Test_Matrix_Dot_Produkt();
+//		Test_Matrix_Dot_Produkt();
 //		Test_Switch_Case_Seq(i);
 //		Test_Switch_Case_Nicht_Seq(i);
 //		Test_Switch_Case_Seq(rand()%100);

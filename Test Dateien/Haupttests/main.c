@@ -103,7 +103,7 @@ int main(void)
 //		Test_Switch_Case_Nicht_Seq(i);
 //		Test_Switch_Case_Seq(rand()%100);
 //		Test_Switch_Case_Nicht_Seq(rand()%100);
-		Test_Dividier_Zufaellige_Int(1 + (rand()%100));
+//		Test_Dividier_Zufaellige_Int(1 + (rand()%100));
 //		Test_Dividier_Zufaellige_Float(1 + (rand()%100));
 	}
 	HAL_GPIO_TogglePin(EXECUTE_PIN_GPIO_Port, EXECUTE_PIN_Pin);
