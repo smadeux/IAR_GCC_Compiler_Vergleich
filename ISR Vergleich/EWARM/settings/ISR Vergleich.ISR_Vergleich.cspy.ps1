@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\MadeuxS\Documents\STM32CubeIDE\Compiler Vergleich Workspace\ISR Vergleich\EWARM\settings\ISR Vergleich.ISR_Vergleich.general.xcl" --backend -f "C:\Users\MadeuxS\Documents\STM32CubeIDE\Compiler Vergleich Workspace\ISR Vergleich\EWARM\settings\ISR Vergleich.ISR_Vergleich.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\ISR Vergleich\EWARM\settings\ISR Vergleich.ISR_Vergleich.general.xcl" --backend -f "C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\ISR Vergleich\EWARM\settings\ISR Vergleich.ISR_Vergleich.driver.xcl" 
 }
 else
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\MadeuxS\Documents\STM32CubeIDE\Compiler Vergleich Workspace\ISR Vergleich\EWARM\settings\ISR Vergleich.ISR_Vergleich.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\MadeuxS\Documents\STM32CubeIDE\Compiler Vergleich Workspace\ISR Vergleich\EWARM\settings\ISR Vergleich.ISR_Vergleich.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\ISR Vergleich\EWARM\settings\ISR Vergleich.ISR_Vergleich.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\ISR Vergleich\EWARM\settings\ISR Vergleich.ISR_Vergleich.driver.xcl" 
 }

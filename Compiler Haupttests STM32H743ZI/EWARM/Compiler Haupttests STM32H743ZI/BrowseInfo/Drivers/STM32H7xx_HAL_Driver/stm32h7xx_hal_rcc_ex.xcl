@@ -1,25 +1,25 @@
-"C:\Users\MadeuxS\Documents\STM32CubeIDE\Compiler Vergleich Workspace\Compiler Haupttests STM32H743ZI\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc_ex.c"
+"C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\Compiler Haupttests STM32H743ZI\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc_ex.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-C:\Users\MadeuxS\Documents\STM32CubeIDE\Compiler Vergleich Workspace\Compiler Haupttests STM32H743ZI\EWARM\Compiler Haupttests STM32H743ZI\BrowseInfo\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc_ex.pbi.dep
+C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\Compiler Haupttests STM32H743ZI\EWARM\Compiler Haupttests STM32H743ZI\BrowseInfo\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc_ex.pbi.dep
 -o
-C:\Users\MadeuxS\Documents\STM32CubeIDE\Compiler Vergleich Workspace\Compiler Haupttests STM32H743ZI\EWARM\Compiler Haupttests STM32H743ZI\BrowseInfo\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc_ex.pbi
+C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\Compiler Haupttests STM32H743ZI\EWARM\Compiler Haupttests STM32H743ZI\BrowseInfo\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc_ex.pbi
 -I
-C:\Users\MadeuxS\Documents\STM32CubeIDE\Compiler Vergleich Workspace\Compiler Haupttests STM32H743ZI\Drivers\STM32H7xx_HAL_Driver\Src
+C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\Compiler Haupttests STM32H743ZI\Drivers\STM32H7xx_HAL_Driver\Src
 -I
-C:\Users\MadeuxS\Documents\STM32CubeIDE\Compiler Vergleich Workspace\Compiler Haupttests STM32H743ZI\EWARM/../Core/Inc\
+C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\Compiler Haupttests STM32H743ZI\EWARM/../Core/Inc\
 -I
-C:\Users\MadeuxS\Documents\STM32CubeIDE\Compiler Vergleich Workspace\Compiler Haupttests STM32H743ZI\EWARM/../Drivers/STM32H7xx_HAL_Driver/Inc\
+C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\Compiler Haupttests STM32H743ZI\EWARM/../Drivers/STM32H7xx_HAL_Driver/Inc\
 -I
-C:\Users\MadeuxS\Documents\STM32CubeIDE\Compiler Vergleich Workspace\Compiler Haupttests STM32H743ZI\EWARM/../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy\
+C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\Compiler Haupttests STM32H743ZI\EWARM/../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy\
 -I
-C:\Users\MadeuxS\Documents\STM32CubeIDE\Compiler Vergleich Workspace\Compiler Haupttests STM32H743ZI\EWARM/../Drivers/CMSIS/Device/ST/STM32H7xx/Include\
+C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\Compiler Haupttests STM32H743ZI\EWARM/../Drivers/CMSIS/Device/ST/STM32H7xx/Include\
 -I
-C:\Users\MadeuxS\Documents\STM32CubeIDE\Compiler Vergleich Workspace\Compiler Haupttests STM32H743ZI\EWARM/../Drivers/CMSIS/Include\
+C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\Compiler Haupttests STM32H743ZI\EWARM/../Drivers/CMSIS/Include\
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c\aarch32
 -I
@@ -27,15 +27,15 @@ C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c
 -I
-C:\Users\MadeuxS\Documents\STM32CubeIDE\Compiler Vergleich Workspace\Compiler Haupttests STM32H743ZI\Core\Inc
+C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\Compiler Haupttests STM32H743ZI\Core\Inc
 -I
-C:\Users\MadeuxS\Documents\STM32CubeIDE\Compiler Vergleich Workspace\Compiler Haupttests STM32H743ZI\Drivers\STM32H7xx_HAL_Driver\Inc
+C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\Compiler Haupttests STM32H743ZI\Drivers\STM32H7xx_HAL_Driver\Inc
 -I
-C:\Users\MadeuxS\Documents\STM32CubeIDE\Compiler Vergleich Workspace\Compiler Haupttests STM32H743ZI\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy
+C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\Compiler Haupttests STM32H743ZI\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy
 -I
-C:\Users\MadeuxS\Documents\STM32CubeIDE\Compiler Vergleich Workspace\Compiler Haupttests STM32H743ZI\Drivers\CMSIS\Device\ST\STM32H7xx\Include
+C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\Compiler Haupttests STM32H743ZI\Drivers\CMSIS\Device\ST\STM32H7xx\Include
 -I
-C:\Users\MadeuxS\Documents\STM32CubeIDE\Compiler Vergleich Workspace\Compiler Haupttests STM32H743ZI\Drivers\CMSIS\Include
+C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\Compiler Haupttests STM32H743ZI\Drivers\CMSIS\Include
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0
@@ -223,6 +223,7 @@ C:\Users\MadeuxS\Documents\STM32CubeIDE\Compiler Vergleich Workspace\Compiler Ha
 -D__DEF_STACK_MEM_INDEX__=0
 -D__PRAGMA_PACK_ON__=1
 -D__MULTIPLE_INHERITANCE__=1
+-D__FOR_DEBUG__=
 -D__AAPCS_VFP__=1
 -D__ARM4TM__=4
 -D__ARM5TM__=5

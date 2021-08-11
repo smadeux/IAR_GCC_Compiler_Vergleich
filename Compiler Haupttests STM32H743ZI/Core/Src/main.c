@@ -50,7 +50,6 @@
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 /* USER CODE BEGIN PFP */
-//Testfunktionsprototypen hier hinzufügen
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -98,12 +97,12 @@ int main(void)
 	for(int i = 0; i < 100; i++)
 	{
 //      Testfunktionsaufrufe hier hinzufügen
-//		Test_Matrix_Dot_Produkt();
+		Test_Matrix_Dot_Produkt();
 //		Test_Switch_Case_Seq(i);
 //		Test_Switch_Case_Nicht_Seq(i);
 //		Test_Switch_Case_Seq(rand()%100);
 //		Test_Switch_Case_Nicht_Seq(rand()%100);
-		Test_Dividier_Zufaellige_Int(1 + (rand()%100));
+//		Test_Dividier_Zufaellige_Int(1 + (rand()%100));
 //		Test_Dividier_Zufaellige_Float(1 + (rand()%100));
 	}
 	HAL_GPIO_TogglePin(EXECUTE_PIN_GPIO_Port, EXECUTE_PIN_Pin);
@@ -186,7 +185,6 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-//Testfunktionen hier hinzufügen
 /* USER CODE END 4 */
 
 /**

@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\MadeuxS\Documents\STM32CubeIDE\Compiler Vergleich Workspace\Compiler Haupttests STM32H743ZI\EWARM\settings\Compiler Haupttests STM32H743ZI.Compiler_Haupttests_STM32H743ZI.general.xcl" --backend -f "C:\Users\MadeuxS\Documents\STM32CubeIDE\Compiler Vergleich Workspace\Compiler Haupttests STM32H743ZI\EWARM\settings\Compiler Haupttests STM32H743ZI.Compiler_Haupttests_STM32H743ZI.driver.xcl" 
+"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\Compiler Haupttests STM32H743ZI\EWARM\settings\Compiler Haupttests STM32H743ZI.Compiler_Haupttests_STM32H743ZI.general.xcl" --backend -f "C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\Compiler Haupttests STM32H743ZI\EWARM\settings\Compiler Haupttests STM32H743ZI.Compiler_Haupttests_STM32H743ZI.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\MadeuxS\Documents\STM32CubeIDE\Compiler Vergleich Workspace\Compiler Haupttests STM32H743ZI\EWARM\settings\Compiler Haupttests STM32H743ZI.Compiler_Haupttests_STM32H743ZI.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\MadeuxS\Documents\STM32CubeIDE\Compiler Vergleich Workspace\Compiler Haupttests STM32H743ZI\EWARM\settings\Compiler Haupttests STM32H743ZI.Compiler_Haupttests_STM32H743ZI.driver.xcl" 
+"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\Compiler Haupttests STM32H743ZI\EWARM\settings\Compiler Haupttests STM32H743ZI.Compiler_Haupttests_STM32H743ZI.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\Compiler Haupttests STM32H743ZI\EWARM\settings\Compiler Haupttests STM32H743ZI.Compiler_Haupttests_STM32H743ZI.driver.xcl" 
 
 @echo off 
 :end
