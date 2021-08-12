@@ -61,8 +61,8 @@ all: main-build
 main-build: Compiler\ Haupttests\ STM32H743ZI.elf secondary-outputs
 
 # Tool invocations
-Compiler\ Haupttests\ STM32H743ZI.elf: $(OBJS) $(USER_OBJS) C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\Compiler\ Haupttests\ STM32H743ZI\STM32H743ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Compiler Haupttests STM32H743ZI.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\Compiler Haupttests STM32H743ZI\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Compiler Haupttests STM32H743ZI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Compiler\ Haupttests\ STM32H743ZI.elf: $(OBJS) $(USER_OBJS) C:\Users\MadeuxS\Documents\Compiler\ Vergleich\ Datein\Compiler\ Vergleich\ Git\ Repo\Compiler\ Haupttests\ STM32H743ZI\STM32H743ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Compiler Haupttests STM32H743ZI.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler Vergleich Git Repo\Compiler Haupttests STM32H743ZI\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Compiler Haupttests STM32H743ZI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
