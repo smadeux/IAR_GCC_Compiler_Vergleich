@@ -1,5 +1,5 @@
 #
-# GCC vs. IAR Vergleich Tests
+# IAR vs. GCC Vergleich Tests
 
 Autor: Scott Madeux
 
@@ -7,7 +7,7 @@ GitHub Repository: [smadeux/IAR\_GCC\_Compiler\_Vergleich (github.com)](https://
 
 # Einführung
 
-Dieses Dokument enthält Information über die Tests, die ich gemacht habe, um die GCC und IAR Compiler zu vergleichen.
+Dieses Dokument enthält Information über die Tests, die ich gemacht habe, um die IAR und GCC Compiler zu vergleichen.
 
 Die &quot; **Compiler Haupttests STM32H743ZI**&quot; und &quot; **ISR Vergleich**&quot; Ordner in der GitHub Repository enthält die STM32CubeIDE und IAR Embedded Workbench Testprojekt Dateien. Der Ordner &quot;Test Dateien&quot; enthält einigen Dateien die Tests zu erklären.
 
