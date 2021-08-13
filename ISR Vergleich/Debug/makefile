@@ -61,8 +61,8 @@ all: main-build
 main-build: ISR\ Vergleich.elf secondary-outputs
 
 # Tool invocations
-ISR\ Vergleich.elf: $(OBJS) $(USER_OBJS) C:\Users\MadeuxS\Documents\STM32CubeIDE\Compiler\ Vergleich\ Workspace\ISR\ Vergleich\STM32H743ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "ISR Vergleich.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\MadeuxS\Documents\STM32CubeIDE\Compiler Vergleich Workspace\ISR Vergleich\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ISR Vergleich.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+ISR\ Vergleich.elf: $(OBJS) $(USER_OBJS) C:\Users\MadeuxS\Documents\Compiler\ Vergleich\ Datein\Compiler\ Vergleich\ Git\ Repo\ISR\ Vergleich\STM32H743ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "ISR Vergleich.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler Vergleich Git Repo\ISR Vergleich\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ISR Vergleich.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

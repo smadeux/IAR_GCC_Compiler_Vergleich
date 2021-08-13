@@ -10,6 +10,16 @@ zu nutzung diesen Tests.
 *******************************************************************************/
 #include <stdlib.h>
 
+#define SORT_ARRAY_SIZE 20
+
+void Random_Int_Array(int array[], int size)
+{
+	for(int i = 0; i < size; i++)
+	{
+		array[i] = rand();
+	}
+}
+
 void Test_Matrix_Dot_Produkt()
 {
 	int M1[10][10] = {{1,2,3,4,5,6,7,8,9,10},
@@ -138,5 +148,31 @@ float Test_Dividier_Zufaellige_Float(int i)
 	return x;
 }
 
+void Test_Bubble_Sort()
+{
+	int array[SORT_ARRAY_SIZE];
+	Random_Int_Array(array, SORT_ARRAY_SIZE);
 
+	int a = 0;
+	int b = 1;
+	int switchCount = 0;
+	int temp;
+
+	do
+	{
+		a = 0;
+		b = 1;
+		switchCount = 0;
+		for(;b < SORT_ARRAY_SIZE; a++, b++)
+		{
+			if(array[a] > array[b])
+			{
+				temp = array[a];
+				array[a] = array[b];
+				array[b] = temp;
+				switchCount++;
+			}
+		}
+	} while(switchCount > 0);
+}
 

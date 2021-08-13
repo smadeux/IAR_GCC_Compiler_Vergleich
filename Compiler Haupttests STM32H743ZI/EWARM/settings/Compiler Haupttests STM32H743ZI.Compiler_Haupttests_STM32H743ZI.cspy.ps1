@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\Compiler Haupttests STM32H743ZI\EWARM\settings\Compiler Haupttests STM32H743ZI.Compiler_Haupttests_STM32H743ZI.general.xcl" --backend -f "C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\Compiler Haupttests STM32H743ZI\EWARM\settings\Compiler Haupttests STM32H743ZI.Compiler_Haupttests_STM32H743ZI.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\settings\Compiler Haupttests STM32H743ZI.Compiler_Haupttests_STM32H743ZI.general.xcl" --backend -f "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\settings\Compiler Haupttests STM32H743ZI.Compiler_Haupttests_STM32H743ZI.driver.xcl" 
 }
 else
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\Compiler Haupttests STM32H743ZI\EWARM\settings\Compiler Haupttests STM32H743ZI.Compiler_Haupttests_STM32H743ZI.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\Compiler Haupttests STM32H743ZI\EWARM\settings\Compiler Haupttests STM32H743ZI.Compiler_Haupttests_STM32H743ZI.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\settings\Compiler Haupttests STM32H743ZI.Compiler_Haupttests_STM32H743ZI.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\settings\Compiler Haupttests STM32H743ZI.Compiler_Haupttests_STM32H743ZI.driver.xcl" 
 }

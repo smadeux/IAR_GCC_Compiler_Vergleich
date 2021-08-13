@@ -1,7 +1,7 @@
-testfunktionen.c:13:6:Random_Int_Array	16	static
-testfunktionen.c:21:6:Test_Matrix_Dot_Produkt	0	static
-testfunktionen.c:49:6:Test_Switch_Case_Seq	0	static
-testfunktionen.c:92:6:Test_Switch_Case_Nicht_Seq	0	static
-testfunktionen.c:135:5:Test_Dividier_Zufaellige_Int	8	static
-testfunktionen.c:142:7:Test_Dividier_Zufaellige_Float	16	static
-testfunktionen.c:149:6:Test_Bubble_Sort	96	static
+testfunktionen.c:15:6:Random_Int_Array	16	static
+testfunktionen.c:23:6:Test_Matrix_Dot_Produkt	0	static
+testfunktionen.c:51:6:Test_Switch_Case_Seq	0	static
+testfunktionen.c:94:6:Test_Switch_Case_Nicht_Seq	0	static
+testfunktionen.c:137:5:Test_Dividier_Zufaellige_Int	8	static
+testfunktionen.c:144:7:Test_Dividier_Zufaellige_Float	16	static
+testfunktionen.c:151:6:Test_Bubble_Sort	96	static

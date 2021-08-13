@@ -10,6 +10,8 @@ zu nutzung diesen Tests.
 *******************************************************************************/
 #include <stdlib.h>
 
+#define SORT_ARRAY_SIZE 20
+
 void Random_Int_Array(int array[], int size)
 {
 	for(int i = 0; i < size; i++)
@@ -148,9 +150,8 @@ float Test_Dividier_Zufaellige_Float(int i)
 
 void Test_Bubble_Sort()
 {
-	int arraySize = 20;
-	int array[arraySize];
-	Random_Int_Array(array, arraySize);
+	int array[SORT_ARRAY_SIZE];
+	Random_Int_Array(array, SORT_ARRAY_SIZE);
 
 	int a = 0;
 	int b = 1;
@@ -162,7 +163,7 @@ void Test_Bubble_Sort()
 		a = 0;
 		b = 1;
 		switchCount = 0;
-		for(;b < arraySize; a++, b++)
+		for(;b < SORT_ARRAY_SIZE; a++, b++)
 		{
 			if(array[a] > array[b])
 			{

@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\ISR Vergleich\EWARM\settings\ISR Vergleich.ISR_Vergleich.general.xcl" --backend -f "C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\ISR Vergleich\EWARM\settings\ISR Vergleich.ISR_Vergleich.driver.xcl" 
+"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler Vergleich Git Repo\ISR Vergleich\EWARM\settings\ISR Vergleich.ISR_Vergleich.general.xcl" --backend -f "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler Vergleich Git Repo\ISR Vergleich\EWARM\settings\ISR Vergleich.ISR_Vergleich.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\ISR Vergleich\EWARM\settings\ISR Vergleich.ISR_Vergleich.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\MadeuxS\Downloads\KATEK_Compiler_Vergleich-main\ISR Vergleich\EWARM\settings\ISR Vergleich.ISR_Vergleich.driver.xcl" 
+"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler Vergleich Git Repo\ISR Vergleich\EWARM\settings\ISR Vergleich.ISR_Vergleich.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler Vergleich Git Repo\ISR Vergleich\EWARM\settings\ISR Vergleich.ISR_Vergleich.driver.xcl" 
 
 @echo off 
 :end
