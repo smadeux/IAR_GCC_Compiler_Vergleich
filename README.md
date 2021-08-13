@@ -3,7 +3,7 @@
 
 Autor: Scott Madeux
 
-GitHub Repository: [smadeux/KATEK\_Compiler\_Vergleich (github.com)](https://github.com/smadeux/KATEK_Compiler_Vergleich)
+GitHub Repository: [smadeux/IAR\_GCC\_Compiler\_Vergleich (github.com)](https://github.com/smadeux/IAR_GCC_Compiler_Vergleich)
 
 # Einführung
 
@@ -49,7 +49,7 @@ Man kann die Ergebnisse die Tests an diesen Link sehen: [Compiler Vergleich Test
 
 # Testwiederholung
 
-Folgen Sie dieser Link ([smadeux/KATEK\_Compiler\_Vergleich (github.com)](https://github.com/smadeux/KATEK_Compiler_Vergleich)) und die Repository herunterladen.
+Folgen Sie dieser Link ([smadeux/IAR\_GCC\_Compiler\_Vergleich (github.com)](https://github.com/smadeux/IAR_GCC_Compiler_Vergleich)) und die Repository herunterladen.
 
 **Tests 1-8:**
 
