@@ -23,7 +23,11 @@ Bisher habe ich folgenden Tests durchgeführt:
 6. Dividieren ein zufällige Int durch ein über gegebene zufällige Int
 7. Dividieren ein zufällige Float durch ein über gegebene zufällige Int
 8. Sortieren ein zufälliges Array von 20 Ints mit dem Bubble Sort
-9. Das Timing von ein leere Interrupt Service Routine (ISR)
+9. printf() Funktion Test
+10. strcpy() Funktion Test
+11. strcmp() Funktion Test
+12. strlen() Funktion Test
+13. Das Timing von ein leere Interrupt Service Routine (ISR)
 
 # Testmethoden
 
@@ -51,7 +55,7 @@ Man kann die Ergebnisse die Tests an diesen Link sehen: [IAR vs GCC Compiler Ver
 
 Folgen Sie dieser Link ([smadeux/IAR\_GCC\_Compiler\_Vergleich (github.com)](https://github.com/smadeux/IAR_GCC_Compiler_Vergleich)) und die Repository herunterladen.
 
-**Tests 1-8:**
+**Tests 1-12:**
 
 1. Innerhalb die &quot; **Compiler Haupttests STM32H743ZI**&quot; Ordner findet man eine STM32CubeIDE Datei namens &quot; **.project**&quot; und eine IAR Embedded Workbench Datei unter der Ordner EWARM namens &quot; **Project.eww**&quot;.
 2. Öffnen Sie diesen beiden Projekten und dann können Sie jetzt alles innerhalb der STM32CubeIDE oder der IAR Embedded Workbench ausführen und die Platte durch den **PC6 Pin** zu einem Oszilloskop verbinden.

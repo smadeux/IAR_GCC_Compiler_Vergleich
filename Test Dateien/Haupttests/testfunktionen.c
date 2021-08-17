@@ -176,3 +176,33 @@ void Test_Bubble_Sort()
 	} while(switchCount > 0);
 }
 
+void Test_printf()
+{
+	printf("Hello STM32H743ZI\n");
+}
+
+void Test_strcpy()
+{
+	char dest[27];
+	strcpy(dest, "abcdefghijklmnopqrstuvwxyz");
+}
+
+void Test_strcmp()
+{
+	char str1[11];
+	char str2[11];
+
+	strcpy(str1, "abcdefghij");
+	strcpy(str2, "ABCDEFGHIJ");
+
+	int result = strcmp(str1, str2);
+	printf(result);
+}
+
+void Test_strlen()
+{
+	char str[11];
+	strcpy(str, "abcdefghij");
+	int result = strlen(str);
+	printf(result);
+}

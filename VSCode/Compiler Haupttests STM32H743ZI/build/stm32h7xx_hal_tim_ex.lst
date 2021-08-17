@@ -1,0 +1,24 @@
+ARM GAS  C:\Users\MadeuxS\AppData\Local\Temp\ccerXYcY.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.eabi_attribute 28, 1
+   3              		.eabi_attribute 23, 1
+   4              		.eabi_attribute 24, 1
+   5              		.eabi_attribute 25, 1
+   6              		.eabi_attribute 26, 1
+   7              		.eabi_attribute 30, 2
+   8              		.eabi_attribute 34, 1
+   9              		.eabi_attribute 18, 4
+  10              		.file	"stm32h7xx_hal_tim_ex.c"
+  11              		.text
+  12              	.Ltext0:
+  13              		.cfi_sections	.debug_frame
+  14              	.Letext0:
+ARM GAS  C:\Users\MadeuxS\AppData\Local\Temp\ccerXYcY.s 			page 2
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 stm32h7xx_hal_tim_ex.c
+
+NO UNDEFINED SYMBOLS

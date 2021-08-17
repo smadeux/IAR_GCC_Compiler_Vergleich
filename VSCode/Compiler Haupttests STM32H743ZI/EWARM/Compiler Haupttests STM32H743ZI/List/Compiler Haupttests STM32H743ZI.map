@@ -1,0 +1,536 @@
+###############################################################################
+#
+# IAR ELF Linker V9.10.2.313/W64 for ARM                  13/Aug/2021  09:16:59
+# Copyright 2007-2021 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler
+#        Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler
+#        Haupttests STM32H743ZI\Exe\Compiler Haupttests STM32H743ZI.out
+#    Map file     =
+#        C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler
+#        Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler
+#        Haupttests STM32H743ZI\List\Compiler Haupttests STM32H743ZI.map
+#    Command line =
+#        -f "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler
+#        Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler
+#        Haupttests STM32H743ZI\Exe\Compiler Haupttests STM32H743ZI.out.rsp"
+#        ("C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler
+#        Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler
+#        Haupttests STM32H743ZI\Obj\Application\User\Core\main.o"
+#        "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler
+#        Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler
+#        Haupttests STM32H743ZI\Obj\Application\EWARM\startup_stm32h743xx.o"
+#        "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler
+#        Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler
+#        Haupttests
+#        STM32H743ZI\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal.o"
+#        "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler
+#        Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler
+#        Haupttests
+#        STM32H743ZI\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_cortex.o"
+#        "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler
+#        Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler
+#        Haupttests
+#        STM32H743ZI\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma.o"
+#        "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler
+#        Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler
+#        Haupttests
+#        STM32H743ZI\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma_ex.o"
+#        "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler
+#        Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler
+#        Haupttests
+#        STM32H743ZI\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_exti.o"
+#        "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler
+#        Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler
+#        Haupttests
+#        STM32H743ZI\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_flash.o"
+#        "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler
+#        Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler
+#        Haupttests
+#        STM32H743ZI\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_flash_ex.o"
+#        "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler
+#        Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler
+#        Haupttests
+#        STM32H743ZI\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_gpio.o"
+#        "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler
+#        Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler
+#        Haupttests
+#        STM32H743ZI\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_hsem.o"
+#        "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler
+#        Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler
+#        Haupttests
+#        STM32H743ZI\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c.o"
+#        "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler
+#        Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler
+#        Haupttests
+#        STM32H743ZI\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c_ex.o"
+#        "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler
+#        Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler
+#        Haupttests
+#        STM32H743ZI\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_mdma.o"
+#        "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler
+#        Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler
+#        Haupttests STM32H743ZI\Obj\Application\User\Core\stm32h7xx_hal_msp.o"
+#        "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler
+#        Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler
+#        Haupttests
+#        STM32H743ZI\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_pwr.o"
+#        "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler
+#        Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler
+#        Haupttests
+#        STM32H743ZI\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_pwr_ex.o"
+#        "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler
+#        Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler
+#        Haupttests
+#        STM32H743ZI\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc.o"
+#        "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler
+#        Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler
+#        Haupttests
+#        STM32H743ZI\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc_ex.o"
+#        "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler
+#        Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler
+#        Haupttests
+#        STM32H743ZI\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_tim.o"
+#        "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler
+#        Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler
+#        Haupttests
+#        STM32H743ZI\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_tim_ex.o"
+#        "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler
+#        Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler
+#        Haupttests STM32H743ZI\Obj\Application\User\Core\stm32h7xx_it.o"
+#        "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler
+#        Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler
+#        Haupttests STM32H743ZI\Obj\Drivers\CMSIS\system_stm32h7xx.o"
+#        "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler
+#        Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler
+#        Haupttests STM32H743ZI\Obj\Application\User\Core\testfunktionen.o"
+#        --no_out_extension -o "C:\Users\MadeuxS\Documents\Compiler Vergleich
+#        Datein\Compiler Vergleich Git Repo\Compiler Haupttests
+#        STM32H743ZI\EWARM\Compiler Haupttests STM32H743ZI\Exe\Compiler
+#        Haupttests STM32H743ZI.out" --redirect _Printf=_PrintfFullNoMb
+#        --redirect _Scanf=_ScanfFullNoMb --map
+#        "C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler
+#        Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler
+#        Haupttests STM32H743ZI\List\Compiler Haupttests STM32H743ZI.map"
+#        --config "C:\Users\MadeuxS\Documents\Compiler Vergleich
+#        Datein\Compiler Vergleich Git Repo\Compiler Haupttests
+#        STM32H743ZI\EWARM/stm32h743xx_flash.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x81f'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block HEAP with size = 512, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2001'ffff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                       0x298
+  .intvec            ro code   0x800'0000   0x298  startup_stm32h743xx.o [1]
+                             - 0x800'0298   0x298
+
+"P1":                                      0x13bc
+  .text              ro code   0x800'0298   0x524  stm32h7xx_hal_rcc.o [4]
+  .text              ro code   0x800'07bc    0x6c  stm32h7xx_hal.o [4]
+  .text              ro code   0x800'0828     0xc  stm32h7xx_hal.o [4]
+  .text              ro code   0x800'0834    0xac  stm32h7xx_hal_cortex.o [4]
+  .text              ro code   0x800'08e0   0x374  stm32h7xx_hal_rcc.o [4]
+  .text              ro code   0x800'0c54    0x48  stm32h7xx_hal.o [4]
+  .text              ro code   0x800'0c9c    0x20  stm32h7xx_hal_msp.o [2]
+  .text              ro code   0x800'0cbc   0x248  stm32h7xx_hal_gpio.o [4]
+  .text              ro code   0x800'0f04   0x128  main.o [2]
+  .text              ro code   0x800'102c    0x14  memset.o [7]
+  .text              ro code   0x800'1040    0x9c  rand.o [5]
+  .text              ro code   0x800'10dc    0x34  testfunktionen.o [2]
+  .text              ro code   0x800'1110    0x4c  stm32h7xx_hal_pwr_ex.o [4]
+  .text              ro code   0x800'115c    0x66  ABImemset.o [7]
+  .text              ro code   0x800'11c2    0x2a  copy_init3.o [7]
+  .text              ro code   0x800'11ec    0xe0  system_stm32h7xx.o [3]
+  .text              ro code   0x800'12cc    0x38  zero_init3.o [7]
+  .text              ro code   0x800'1304    0x28  data_init.o [7]
+  .text              ro code   0x800'132c    0x22  fpinit_M.o [6]
+  .iar.init_table    const     0x800'1350    0x24  - Linker created -
+  .text              ro code   0x800'1374    0x1e  cmain.o [7]
+  .text              ro code   0x800'1392     0x4  low_level_init.o [5]
+  .text              ro code   0x800'1396     0x4  exit.o [5]
+  .text              ro code   0x800'139c     0xa  cexit.o [7]
+  .text              ro code   0x800'13a8    0x14  exit.o [8]
+  .text              ro code   0x800'13bc    0x1c  cstartup_M.o [7]
+  Initializer bytes  const     0x800'13d8    0x1c  <for P2-1>
+  .text              ro code   0x800'13f4    0x14  stm32h7xx_it.o [2]
+  .text              ro code   0x800'1408    0x10  stm32h7xx_hal.o [4]
+  .text              ro code   0x800'1418    0x10  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1428     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'142c     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1430     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1434     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1438     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'143c     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1440     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1444     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1448     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'144c     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1450     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1454     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1458     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'145c     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1460     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1464     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1468     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'146c     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1470     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1474     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1478     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'147c     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1480     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1484     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1488     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'148c     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1490     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1494     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1498     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'149c     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'14a0     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'14a4     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'14a8     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'14ac     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'14b0     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'14b4     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'14b8     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'14bc     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'14c0     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'14c4     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'14c8     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'14cc     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'14d0     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'14d4     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'14d8     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'14dc     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'14e0     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'14e4     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'14e8     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'14ec     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'14f0     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'14f4     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'14f8     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'14fc     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1500     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1504     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1508     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'150c     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1510     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1514     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1518     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'151c     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1520     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1524     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1528     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'152c     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1530     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1534     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1538     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'153c     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1540     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1544     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1548     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'154c     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1550     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1554     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1558     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'155c     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1560     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1564     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1568     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'156c     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1570     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1574     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1578     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'157c     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1580     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1584     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1588     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'158c     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1590     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1594     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1598     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'159c     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'15a0     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'15a4     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'15a8     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'15ac     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'15b0     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'15b4     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'15b8     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'15bc     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'15c0     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'15c4     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'15c8     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'15cc     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'15d0     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'15d4     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'15d8     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'15dc     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'15e0     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'15e4     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'15e8     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'15ec     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'15f0     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'15f4     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'15f8     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'15fc     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1600     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1604     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1608     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'160c     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1610     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1614     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1618     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'161c     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1620     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1624     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1628     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'162c     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1630     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1634     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1638     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'163c     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1640     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1644     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1648     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'164c     0x4  startup_stm32h743xx.o [1]
+  .text              ro code   0x800'1650     0x4  startup_stm32h743xx.o [1]
+  .rodata            const     0x800'1654     0x0  zero_init3.o [7]
+  .rodata            const     0x800'1654     0x0  copy_init3.o [7]
+                             - 0x800'1654  0x13bc
+
+"P2", part 1 of 3:                           0x1c
+  P2-1                        0x2000'0000    0x1c  <Init block>
+    .data            inited   0x2000'0000     0xc  stm32h7xx_hal.o [4]
+    .data            inited   0x2000'000c     0x8  system_stm32h7xx.o [3]
+    .data            inited   0x2000'0014     0x8  rand.o [5]
+                            - 0x2000'001c    0x1c
+
+"P2", part 2 of 3:                           0x84
+  .bss               zero     0x2000'001c    0x84  rand.o [5]
+                            - 0x2000'00a0    0x84
+
+"P2", part 3 of 3:                          0x400
+  CSTACK                      0x2000'00a0   0x400  <Block>
+    CSTACK           uninit   0x2000'00a0   0x400  <Block tail>
+                            - 0x2000'04a0   0x400
+
+Unused ranges:
+
+         From           To       Size
+         ----           --       ----
+   0x800'1654   0x81f'ffff  0x1f'e9ac
+  0x2000'04a0  0x2001'ffff   0x1'fb60
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x84:
+          0x2000'001c  0x84
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x1c:
+           0x800'13d8  0x1c
+    1 destination range, total size 0x1c:
+          0x2000'0000  0x1c
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+command line/config:
+    -------------------------------------------------
+    Total:
+
+C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler Haupttests STM32H743ZI\Obj\Application\EWARM: [1]
+    startup_stm32h743xx.o     1'236
+    -------------------------------------------------
+    Total:                    1'236
+
+C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler Haupttests STM32H743ZI\Obj\Application\User\Core: [2]
+    main.o                      296
+    stm32h7xx_hal_msp.o          32
+    stm32h7xx_it.o               20
+    testfunktionen.o             52
+    -------------------------------------------------
+    Total:                      400
+
+C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler Haupttests STM32H743ZI\Obj\Drivers\CMSIS: [3]
+    system_stm32h7xx.o          224        8        8
+    -------------------------------------------------
+    Total:                      224        8        8
+
+C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler Haupttests STM32H743ZI\Obj\Drivers\STM32H7xx_HAL_Driver: [4]
+    stm32h7xx_hal.o             208       12       12
+    stm32h7xx_hal_cortex.o      172
+    stm32h7xx_hal_gpio.o        584
+    stm32h7xx_hal_pwr_ex.o       76
+    stm32h7xx_hal_rcc.o       2'200
+    -------------------------------------------------
+    Total:                    3'240       12       12
+
+dl7M_tlf.a: [5]
+    exit.o                        4
+    low_level_init.o              4
+    rand.o                      156        8      140
+    -------------------------------------------------
+    Total:                      164        8      140
+
+m7M_tlv.a: [6]
+    fpinit_M.o                   34
+    -------------------------------------------------
+    Total:                       34
+
+rt7M_tl.a: [7]
+    ABImemset.o                 102
+    cexit.o                      10
+    cmain.o                      30
+    copy_init3.o                 42
+    cstartup_M.o                 28
+    data_init.o                  40
+    memset.o                     20
+    zero_init3.o                 56
+    -------------------------------------------------
+    Total:                      328
+
+shb_l.a: [8]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Gaps                          4        2
+    Linker created                        36    1'024
+-----------------------------------------------------
+    Grand Total:              5'650       66    1'184
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base    0x800'1350          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'1374          --   Gb  - Linker created -
+?main                    0x800'1375         Code  Gb  cmain.o [7]
+BusFault_Handler         0x800'13fb    0x2  Code  Gb  stm32h7xx_it.o [2]
+CSTACK$$Base            0x2000'00a0          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'04a0          --   Gb  - Linker created -
+D1CorePrescTable         0x800'12bc   0x10  Data  Gb  system_stm32h7xx.o [3]
+DebugMon_Handler         0x800'1401    0x2  Code  Gb  stm32h7xx_it.o [2]
+HAL_GPIO_Init            0x800'0cbd  0x200  Code  Gb  stm32h7xx_hal_gpio.o [4]
+HAL_GPIO_TogglePin       0x800'0ec5   0x10  Code  Gb  stm32h7xx_hal_gpio.o [4]
+HAL_GPIO_WritePin        0x800'0ebd    0x8  Code  Gb  stm32h7xx_hal_gpio.o [4]
+HAL_GetREVID             0x800'080d    0x8  Code  Gb  stm32h7xx_hal.o [4]
+HAL_GetTick              0x800'0829    0xc  Code  Gb  stm32h7xx_hal.o [4]
+HAL_IncTick              0x800'1409   0x10  Code  Gb  stm32h7xx_hal.o [4]
+HAL_Init                 0x800'07bd   0x50  Code  Gb  stm32h7xx_hal.o [4]
+HAL_InitTick             0x800'0c55   0x48  Code  Gb  stm32h7xx_hal.o [4]
+HAL_MspInit              0x800'0c9d   0x20  Code  Gb  stm32h7xx_hal_msp.o [2]
+HAL_NVIC_SetPriority     0x800'084f   0x5a  Code  Gb  stm32h7xx_hal_cortex.o [4]
+HAL_NVIC_SetPriorityGrouping
+                         0x800'0835   0x1a  Code  Gb  stm32h7xx_hal_cortex.o [4]
+HAL_PWREx_ConfigSupply   0x800'1111   0x46  Code  Gb  stm32h7xx_hal_pwr_ex.o [4]
+HAL_RCC_ClockConfig      0x800'08e1  0x22a  Code  Gb  stm32h7xx_hal_rcc.o [4]
+HAL_RCC_GetSysClockFreq
+                         0x800'0b0d  0x114  Code  Gb  stm32h7xx_hal_rcc.o [4]
+HAL_RCC_OscConfig        0x800'0299  0x524  Code  Gb  stm32h7xx_hal_rcc.o [4]
+HAL_SYSTICK_Config       0x800'08a9   0x22  Code  Gb  stm32h7xx_hal_cortex.o [4]
+HardFault_Handler        0x800'13f7    0x2  Code  Gb  stm32h7xx_it.o [2]
+MemManage_Handler        0x800'13f9    0x2  Code  Gb  stm32h7xx_it.o [2]
+NMI_Handler              0x800'13f5    0x2  Code  Gb  stm32h7xx_it.o [2]
+PendSV_Handler           0x800'1403    0x2  Code  Gb  stm32h7xx_it.o [2]
+Region$$Table$$Base      0x800'1350          --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'1374          --   Gb  - Linker created -
+SVC_Handler              0x800'13ff    0x2  Code  Gb  stm32h7xx_it.o [2]
+SysTick_Handler          0x800'1405    0x4  Code  Gb  stm32h7xx_it.o [2]
+SystemClock_Config       0x800'0f85   0x94  Code  Gb  main.o [2]
+SystemCoreClock         0x2000'000c    0x4  Data  Gb  system_stm32h7xx.o [3]
+SystemD2Clock           0x2000'0010    0x4  Data  Gb  system_stm32h7xx.o [3]
+SystemInit               0x800'11ed   0xa6  Code  Gb  system_stm32h7xx.o [3]
+Test_Dividier_Zufaellige_Float
+                         0x800'10dd   0x30  Code  Gb  testfunktionen.o [2]
+UsageFault_Handler       0x800'13fd    0x2  Code  Gb  stm32h7xx_it.o [2]
+_Rand_idx               0x2000'009c    0x4  Data  Lc  rand.o [5]
+_Rand_rv                0x2000'001c   0x80  Data  Lc  rand.o [5]
+_Randinit               0x2000'0014    0x1  Data  Gb  rand.o [5]
+_Randseed               0x2000'0018    0x4  Data  Gb  rand.o [5]
+__aeabi_memset           0x800'115d         Code  Gb  ABImemset.o [7]
+__cmain                  0x800'1375         Code  Gb  cmain.o [7]
+__exit                   0x800'13a9   0x14  Code  Gb  exit.o [8]
+__iar_Memset             0x800'115d         Code  Gb  ABImemset.o [7]
+__iar_Memset_word        0x800'1165         Code  Gb  ABImemset.o [7]
+__iar_copy_init3         0x800'11c3   0x2a  Code  Gb  copy_init3.o [7]
+__iar_data_init3         0x800'1305   0x28  Code  Gb  data_init.o [7]
+__iar_init_vfp           0x800'132d         Code  Gb  fpinit_M.o [6]
+__iar_program_start      0x800'13bd         Code  Gb  cstartup_M.o [7]
+__iar_zero_init3         0x800'12cd   0x38  Code  Gb  zero_init3.o [7]
+__low_level_init         0x800'1393    0x4  Code  Gb  low_level_init.o [5]
+__vector_table           0x800'0000         Data  Gb  startup_stm32h743xx.o [1]
+_call_main               0x800'1381         Code  Gb  cmain.o [7]
+_exit                    0x800'139d         Code  Gb  cexit.o [7]
+exit                     0x800'1397    0x4  Code  Gb  exit.o [5]
+main                     0x800'0f05   0x80  Code  Gb  main.o [2]
+memset                   0x800'102d   0x14  Code  Gb  memset.o [7]
+rand                     0x800'1041   0x8a  Code  Gb  rand.o [5]
+uwTick                  0x2000'0004    0x4  Data  Gb  stm32h7xx_hal.o [4]
+uwTickFreq              0x2000'0000    0x1  Data  Gb  stm32h7xx_hal.o [4]
+uwTickPrio              0x2000'0008    0x4  Data  Gb  stm32h7xx_hal.o [4]
+
+
+[1] = C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler Haupttests STM32H743ZI\Obj\Application\EWARM
+[2] = C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler Haupttests STM32H743ZI\Obj\Application\User\Core
+[3] = C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler Haupttests STM32H743ZI\Obj\Drivers\CMSIS
+[4] = C:\Users\MadeuxS\Documents\Compiler Vergleich Datein\Compiler Vergleich Git Repo\Compiler Haupttests STM32H743ZI\EWARM\Compiler Haupttests STM32H743ZI\Obj\Drivers\STM32H7xx_HAL_Driver
+[5] = dl7M_tlf.a
+[6] = m7M_tlv.a
+[7] = rt7M_tl.a
+[8] = shb_l.a
+
+  5'650 bytes of readonly  code memory
+     66 bytes of readonly  data memory
+  1'184 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

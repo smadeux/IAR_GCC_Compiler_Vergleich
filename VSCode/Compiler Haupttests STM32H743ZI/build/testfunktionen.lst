@@ -1,0 +1,853 @@
+ARM GAS  C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.eabi_attribute 28, 1
+   3              		.eabi_attribute 23, 1
+   4              		.eabi_attribute 24, 1
+   5              		.eabi_attribute 25, 1
+   6              		.eabi_attribute 26, 1
+   7              		.eabi_attribute 30, 2
+   8              		.eabi_attribute 34, 1
+   9              		.eabi_attribute 18, 4
+  10              		.file	"testfunktionen.c"
+  11              		.text
+  12              	.Ltext0:
+  13              		.cfi_sections	.debug_frame
+  14              		.section	.text.Random_Int_Array,"ax",%progbits
+  15              		.align	1
+  16              		.p2align 2,,3
+  17              		.global	Random_Int_Array
+  18              		.arch armv7e-m
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  22              		.fpu fpv5-d16
+  24              	Random_Int_Array:
+  25              	.LVL0:
+  26              	.LFB0:
+  27              		.file 1 "Core/Src/testfunktionen.c"
+   1:Core/Src/testfunktionen.c **** /******************************************************************************
+   2:Core/Src/testfunktionen.c **** 
+   3:Core/Src/testfunktionen.c **** Autor: Scott Madeux
+   4:Core/Src/testfunktionen.c **** Hergestellt: 06.08.2021
+   5:Core/Src/testfunktionen.c **** 
+   6:Core/Src/testfunktionen.c **** Das ist ein Repository von Testfunktionen die haben benutzt sein um die IAR und
+   7:Core/Src/testfunktionen.c **** GCC Compilers zu vergleichen. Sehen Sie das Testdokument für weiter information
+   8:Core/Src/testfunktionen.c **** zu nutzung diesen Tests.
+   9:Core/Src/testfunktionen.c **** 
+  10:Core/Src/testfunktionen.c **** *******************************************************************************/
+  11:Core/Src/testfunktionen.c **** #include <stdlib.h>
+  12:Core/Src/testfunktionen.c **** 
+  13:Core/Src/testfunktionen.c **** #define SORT_ARRAY_SIZE 20
+  14:Core/Src/testfunktionen.c **** 
+  15:Core/Src/testfunktionen.c **** void Random_Int_Array(int array[], int size)
+  16:Core/Src/testfunktionen.c **** {
+  28              		.loc 1 16 1 view -0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  17:Core/Src/testfunktionen.c **** 	for(int i = 0; i < size; i++)
+  32              		.loc 1 17 2 view .LVU1
+  33              	.LBB5:
+  34              		.loc 1 17 6 view .LVU2
+  35              		.loc 1 17 17 view .LVU3
+  36              	.LBE5:
+  16:Core/Src/testfunktionen.c **** 	for(int i = 0; i < size; i++)
+  37              		.loc 1 16 1 is_stmt 0 view .LVU4
+  38 0000 70B5     		push	{r4, r5, r6, lr}
+  39              	.LCFI0:
+  40              		.cfi_def_cfa_offset 16
+ARM GAS  C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s 			page 2
+
+
+  41              		.cfi_offset 4, -16
+  42              		.cfi_offset 5, -12
+  43              		.cfi_offset 6, -8
+  44              		.cfi_offset 14, -4
+  45              	.LBB6:
+  46              		.loc 1 17 2 view .LVU5
+  47 0002 0E1E     		subs	r6, r1, #0
+  48 0004 08DD     		ble	.L1
+  49 0006 051F     		subs	r5, r0, #4
+  50              		.loc 1 17 10 view .LVU6
+  51 0008 0024     		movs	r4, #0
+  52              	.LVL1:
+  53              	.L3:
+  18:Core/Src/testfunktionen.c **** 	{
+  19:Core/Src/testfunktionen.c **** 		array[i] = rand();
+  54              		.loc 1 19 3 is_stmt 1 discriminator 3 view .LVU7
+  17:Core/Src/testfunktionen.c **** 	{
+  55              		.loc 1 17 28 is_stmt 0 discriminator 3 view .LVU8
+  56 000a 0134     		adds	r4, r4, #1
+  57              	.LVL2:
+  58              		.loc 1 19 14 discriminator 3 view .LVU9
+  59 000c FFF7FEFF 		bl	rand
+  60              	.LVL3:
+  61              		.loc 1 19 12 discriminator 3 view .LVU10
+  62 0010 45F8040F 		str	r0, [r5, #4]!
+  17:Core/Src/testfunktionen.c **** 	{
+  63              		.loc 1 17 27 is_stmt 1 discriminator 3 view .LVU11
+  64              	.LVL4:
+  17:Core/Src/testfunktionen.c **** 	{
+  65              		.loc 1 17 17 discriminator 3 view .LVU12
+  17:Core/Src/testfunktionen.c **** 	{
+  66              		.loc 1 17 2 is_stmt 0 discriminator 3 view .LVU13
+  67 0014 A642     		cmp	r6, r4
+  68 0016 F8D1     		bne	.L3
+  69              	.LVL5:
+  70              	.L1:
+  17:Core/Src/testfunktionen.c **** 	{
+  71              		.loc 1 17 2 discriminator 3 view .LVU14
+  72              	.LBE6:
+  20:Core/Src/testfunktionen.c **** 	}
+  21:Core/Src/testfunktionen.c **** }
+  73              		.loc 1 21 1 view .LVU15
+  74 0018 70BD     		pop	{r4, r5, r6, pc}
+  75              		.loc 1 21 1 view .LVU16
+  76              		.cfi_endproc
+  77              	.LFE0:
+  79 001a 00BF     		.section	.text.Test_Matrix_Dot_Produkt,"ax",%progbits
+  80              		.align	1
+  81              		.p2align 2,,3
+  82              		.global	Test_Matrix_Dot_Produkt
+  83              		.syntax unified
+  84              		.thumb
+  85              		.thumb_func
+  86              		.fpu fpv5-d16
+  88              	Test_Matrix_Dot_Produkt:
+  89              	.LFB1:
+  22:Core/Src/testfunktionen.c **** 
+ARM GAS  C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s 			page 3
+
+
+  23:Core/Src/testfunktionen.c **** void Test_Matrix_Dot_Produkt()
+  24:Core/Src/testfunktionen.c **** {
+  90              		.loc 1 24 1 is_stmt 1 view -0
+  91              		.cfi_startproc
+  92              		@ args = 0, pretend = 0, frame = 0
+  93              		@ frame_needed = 0, uses_anonymous_args = 0
+  94              		@ link register save eliminated.
+  25:Core/Src/testfunktionen.c **** 	int M1[10][10] = {{1,2,3,4,5,6,7,8,9,10},
+  95              		.loc 1 25 2 view .LVU18
+  26:Core/Src/testfunktionen.c **** 					  {1,2,3,4,5,6,7,8,9,10},
+  27:Core/Src/testfunktionen.c **** 					  {1,2,3,4,5,6,7,8,9,10},
+  28:Core/Src/testfunktionen.c **** 					  {1,2,3,4,5,6,7,8,9,10},
+  29:Core/Src/testfunktionen.c **** 					  {1,2,3,4,5,6,7,8,9,10},
+  30:Core/Src/testfunktionen.c **** 					  {1,2,3,4,5,6,7,8,9,10},
+  31:Core/Src/testfunktionen.c **** 					  {1,2,3,4,5,6,7,8,9,10},
+  32:Core/Src/testfunktionen.c **** 					  {1,2,3,4,5,6,7,8,9,10},
+  33:Core/Src/testfunktionen.c **** 					  {1,2,3,4,5,6,7,8,9,10},
+  34:Core/Src/testfunktionen.c **** 					  {1,2,3,4,5,6,7,8,9,10}};
+  35:Core/Src/testfunktionen.c **** 					  
+  36:Core/Src/testfunktionen.c **** 	int ret_matrix[10][10];
+  96              		.loc 1 36 2 view .LVU19
+  37:Core/Src/testfunktionen.c **** 	for(int i = 0; i < 10; i++)
+  97              		.loc 1 37 2 view .LVU20
+  98              		.loc 1 37 6 view .LVU21
+  99              		.loc 1 37 17 view .LVU22
+  38:Core/Src/testfunktionen.c **** 	{
+  39:Core/Src/testfunktionen.c **** 		for(int j = 0; j < 10; j++)
+  40:Core/Src/testfunktionen.c **** 		{
+  41:Core/Src/testfunktionen.c **** 			int sum = 0;
+  42:Core/Src/testfunktionen.c **** 			for(int k = 0; k < 10; k++)
+  43:Core/Src/testfunktionen.c **** 			{
+  44:Core/Src/testfunktionen.c **** 				sum += M1[i][k] * M1[k][j];
+  45:Core/Src/testfunktionen.c **** 			}
+  46:Core/Src/testfunktionen.c **** 			ret_matrix[i][j] = sum;
+  47:Core/Src/testfunktionen.c **** 		}
+  48:Core/Src/testfunktionen.c **** 	}
+  49:Core/Src/testfunktionen.c **** }
+ 100              		.loc 1 49 1 is_stmt 0 view .LVU23
+ 101 0000 7047     		bx	lr
+ 102              		.cfi_endproc
+ 103              	.LFE1:
+ 105 0002 00BF     		.section	.text.Test_Switch_Case_Seq,"ax",%progbits
+ 106              		.align	1
+ 107              		.p2align 2,,3
+ 108              		.global	Test_Switch_Case_Seq
+ 109              		.syntax unified
+ 110              		.thumb
+ 111              		.thumb_func
+ 112              		.fpu fpv5-d16
+ 114              	Test_Switch_Case_Seq:
+ 115              	.LVL6:
+ 116              	.LFB2:
+  50:Core/Src/testfunktionen.c **** 
+  51:Core/Src/testfunktionen.c **** char Test_Switch_Case_Seq(int num)
+  52:Core/Src/testfunktionen.c **** {
+ 117              		.loc 1 52 1 is_stmt 1 view -0
+ 118              		.cfi_startproc
+ARM GAS  C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s 			page 4
+
+
+ 119              		@ args = 0, pretend = 0, frame = 0
+ 120              		@ frame_needed = 0, uses_anonymous_args = 0
+ 121              		@ link register save eliminated.
+  53:Core/Src/testfunktionen.c ****   char x = '\n';
+ 122              		.loc 1 53 3 view .LVU25
+  54:Core/Src/testfunktionen.c **** 	switch(num)
+ 123              		.loc 1 54 2 view .LVU26
+ 124 0000 431E     		subs	r3, r0, #1
+ 125 0002 092B     		cmp	r3, #9
+ 126 0004 02D8     		bhi	.L10
+ 127 0006 4030     		adds	r0, r0, #64
+ 128              	.LVL7:
+ 129              		.loc 1 54 2 is_stmt 0 view .LVU27
+ 130 0008 C0B2     		uxtb	r0, r0
+ 131              	.LVL8:
+ 132              		.loc 1 54 2 view .LVU28
+ 133 000a 7047     		bx	lr
+ 134              	.LVL9:
+ 135              	.L10:
+ 136              		.loc 1 54 2 view .LVU29
+ 137 000c 5A20     		movs	r0, #90
+ 138              	.LVL10:
+  55:Core/Src/testfunktionen.c **** 	{
+  56:Core/Src/testfunktionen.c **** 		case 1:
+  57:Core/Src/testfunktionen.c **** 			x = 'A';
+  58:Core/Src/testfunktionen.c **** 			break;
+  59:Core/Src/testfunktionen.c **** 		case 2:
+  60:Core/Src/testfunktionen.c **** 			x = 'B';
+  61:Core/Src/testfunktionen.c **** 			break;
+  62:Core/Src/testfunktionen.c **** 		case 3:
+  63:Core/Src/testfunktionen.c **** 			x = 'C';
+  64:Core/Src/testfunktionen.c **** 			break;
+  65:Core/Src/testfunktionen.c **** 		case 4:
+  66:Core/Src/testfunktionen.c **** 			x = 'D';
+  67:Core/Src/testfunktionen.c **** 			break;
+  68:Core/Src/testfunktionen.c **** 		case 5:
+  69:Core/Src/testfunktionen.c **** 			x = 'E';
+  70:Core/Src/testfunktionen.c **** 			break;
+  71:Core/Src/testfunktionen.c **** 		case 6:
+  72:Core/Src/testfunktionen.c **** 			x = 'F';
+  73:Core/Src/testfunktionen.c **** 			break;
+  74:Core/Src/testfunktionen.c **** 		case 7:
+  75:Core/Src/testfunktionen.c **** 			x = 'G';
+  76:Core/Src/testfunktionen.c **** 			break;
+  77:Core/Src/testfunktionen.c **** 		case 8:
+  78:Core/Src/testfunktionen.c **** 			x = 'H';
+  79:Core/Src/testfunktionen.c **** 			break;
+  80:Core/Src/testfunktionen.c **** 		case 9:
+  81:Core/Src/testfunktionen.c **** 			x = 'I';
+  82:Core/Src/testfunktionen.c **** 			break;
+  83:Core/Src/testfunktionen.c **** 		case 10:
+  84:Core/Src/testfunktionen.c **** 			x = 'J';
+  85:Core/Src/testfunktionen.c **** 			break;
+  86:Core/Src/testfunktionen.c **** 		default:
+  87:Core/Src/testfunktionen.c **** 			x = 'Z';
+  88:Core/Src/testfunktionen.c **** 			break;
+  89:Core/Src/testfunktionen.c **** 	}
+ARM GAS  C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s 			page 5
+
+
+  90:Core/Src/testfunktionen.c **** 	
+  91:Core/Src/testfunktionen.c **** 	return x;
+ 139              		.loc 1 91 2 is_stmt 1 view .LVU30
+  92:Core/Src/testfunktionen.c **** }
+ 140              		.loc 1 92 1 is_stmt 0 view .LVU31
+ 141 000e 7047     		bx	lr
+ 142              		.cfi_endproc
+ 143              	.LFE2:
+ 145              		.section	.text.Test_Switch_Case_Nicht_Seq,"ax",%progbits
+ 146              		.align	1
+ 147              		.p2align 2,,3
+ 148              		.global	Test_Switch_Case_Nicht_Seq
+ 149              		.syntax unified
+ 150              		.thumb
+ 151              		.thumb_func
+ 152              		.fpu fpv5-d16
+ 154              	Test_Switch_Case_Nicht_Seq:
+ 155              	.LVL11:
+ 156              	.LFB3:
+  93:Core/Src/testfunktionen.c **** 
+  94:Core/Src/testfunktionen.c **** char Test_Switch_Case_Nicht_Seq(int num)
+  95:Core/Src/testfunktionen.c **** {
+ 157              		.loc 1 95 1 is_stmt 1 view -0
+ 158              		.cfi_startproc
+ 159              		@ args = 0, pretend = 0, frame = 0
+ 160              		@ frame_needed = 0, uses_anonymous_args = 0
+ 161              		@ link register save eliminated.
+  96:Core/Src/testfunktionen.c **** 	char x = '\n';
+ 162              		.loc 1 96 2 view .LVU33
+  97:Core/Src/testfunktionen.c **** 	switch(num)
+ 163              		.loc 1 97 2 view .LVU34
+ 164 0000 2428     		cmp	r0, #36
+ 165 0002 1ADC     		bgt	.L12
+ 166 0004 0028     		cmp	r0, #0
+ 167 0006 16DD     		ble	.L22
+ 168 0008 0138     		subs	r0, r0, #1
+ 169              	.LVL12:
+ 170              		.loc 1 97 2 is_stmt 0 view .LVU35
+ 171 000a 2328     		cmp	r0, #35
+ 172 000c 13D8     		bhi	.L22
+ 173 000e DFE800F0 		tbb	[pc, r0]
+ 174              	.L16:
+ 175 0012 2B       		.byte	(.L23-.L16)/2
+ 176 0013 12       		.byte	(.L22-.L16)/2
+ 177 0014 12       		.byte	(.L22-.L16)/2
+ 178 0015 12       		.byte	(.L22-.L16)/2
+ 179 0016 2D       		.byte	(.L21-.L16)/2
+ 180 0017 12       		.byte	(.L22-.L16)/2
+ 181 0018 12       		.byte	(.L22-.L16)/2
+ 182 0019 23       		.byte	(.L20-.L16)/2
+ 183 001a 12       		.byte	(.L22-.L16)/2
+ 184 001b 12       		.byte	(.L22-.L16)/2
+ 185 001c 12       		.byte	(.L22-.L16)/2
+ 186 001d 25       		.byte	(.L19-.L16)/2
+ 187 001e 12       		.byte	(.L22-.L16)/2
+ 188 001f 12       		.byte	(.L22-.L16)/2
+ 189 0020 12       		.byte	(.L22-.L16)/2
+ARM GAS  C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s 			page 6
+
+
+ 190 0021 12       		.byte	(.L22-.L16)/2
+ 191 0022 12       		.byte	(.L22-.L16)/2
+ 192 0023 12       		.byte	(.L22-.L16)/2
+ 193 0024 12       		.byte	(.L22-.L16)/2
+ 194 0025 12       		.byte	(.L22-.L16)/2
+ 195 0026 12       		.byte	(.L22-.L16)/2
+ 196 0027 27       		.byte	(.L18-.L16)/2
+ 197 0028 12       		.byte	(.L22-.L16)/2
+ 198 0029 12       		.byte	(.L22-.L16)/2
+ 199 002a 12       		.byte	(.L22-.L16)/2
+ 200 002b 12       		.byte	(.L22-.L16)/2
+ 201 002c 12       		.byte	(.L22-.L16)/2
+ 202 002d 12       		.byte	(.L22-.L16)/2
+ 203 002e 12       		.byte	(.L22-.L16)/2
+ 204 002f 12       		.byte	(.L22-.L16)/2
+ 205 0030 12       		.byte	(.L22-.L16)/2
+ 206 0031 12       		.byte	(.L22-.L16)/2
+ 207 0032 12       		.byte	(.L22-.L16)/2
+ 208 0033 12       		.byte	(.L22-.L16)/2
+ 209 0034 29       		.byte	(.L17-.L16)/2
+ 210 0035 21       		.byte	(.L15-.L16)/2
+ 211              	.LVL13:
+ 212              		.p2align 1
+ 213              	.L22:
+  98:Core/Src/testfunktionen.c **** 	{
+  99:Core/Src/testfunktionen.c **** 		case 1:
+ 100:Core/Src/testfunktionen.c **** 			x = 'A';
+ 101:Core/Src/testfunktionen.c **** 			break;
+ 102:Core/Src/testfunktionen.c **** 		case 5:
+ 103:Core/Src/testfunktionen.c **** 			x = 'B';
+ 104:Core/Src/testfunktionen.c **** 			break;
+ 105:Core/Src/testfunktionen.c **** 		case 8:
+ 106:Core/Src/testfunktionen.c **** 			x = 'C';
+ 107:Core/Src/testfunktionen.c **** 			break;
+ 108:Core/Src/testfunktionen.c **** 		case 12:
+ 109:Core/Src/testfunktionen.c **** 			x = 'D';
+ 110:Core/Src/testfunktionen.c **** 			break;
+ 111:Core/Src/testfunktionen.c **** 		case 35:
+ 112:Core/Src/testfunktionen.c **** 			x = 'E';
+ 113:Core/Src/testfunktionen.c **** 			break;
+ 114:Core/Src/testfunktionen.c **** 		case 36:
+ 115:Core/Src/testfunktionen.c **** 			x = 'F';
+ 116:Core/Src/testfunktionen.c **** 			break;
+ 117:Core/Src/testfunktionen.c **** 		case 86:
+ 118:Core/Src/testfunktionen.c **** 			x = 'G';
+ 119:Core/Src/testfunktionen.c **** 			break;
+ 120:Core/Src/testfunktionen.c **** 		case 22:
+ 121:Core/Src/testfunktionen.c **** 			x = 'H';
+ 122:Core/Src/testfunktionen.c **** 			break;
+ 123:Core/Src/testfunktionen.c **** 		case 85:
+ 124:Core/Src/testfunktionen.c **** 			x = 'I';
+ 125:Core/Src/testfunktionen.c **** 			break;
+ 126:Core/Src/testfunktionen.c **** 		case 99:
+ 127:Core/Src/testfunktionen.c **** 			x = 'J';
+ 128:Core/Src/testfunktionen.c **** 			break;
+ 129:Core/Src/testfunktionen.c **** 		default:
+ 130:Core/Src/testfunktionen.c **** 			x = 'Z';
+ARM GAS  C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s 			page 7
+
+
+ 214              		.loc 1 130 6 view .LVU36
+ 215 0036 5A20     		movs	r0, #90
+ 216 0038 7047     		bx	lr
+ 217              	.LVL14:
+ 218              	.L12:
+  97:Core/Src/testfunktionen.c **** 	switch(num)
+ 219              		.loc 1 97 2 view .LVU37
+ 220 003a 5628     		cmp	r0, #86
+ 221 003c 08D0     		beq	.L24
+ 222 003e 6328     		cmp	r0, #99
+ 223 0040 01D1     		bne	.L27
+ 127:Core/Src/testfunktionen.c **** 			break;
+ 224              		.loc 1 127 6 view .LVU38
+ 225 0042 4A20     		movs	r0, #74
+ 226              	.LVL15:
+ 131:Core/Src/testfunktionen.c **** 			break;
+ 132:Core/Src/testfunktionen.c **** 	}
+ 133:Core/Src/testfunktionen.c **** 	
+ 134:Core/Src/testfunktionen.c **** 	return x;
+ 227              		.loc 1 134 2 is_stmt 1 view .LVU39
+ 135:Core/Src/testfunktionen.c **** }
+ 228              		.loc 1 135 1 is_stmt 0 view .LVU40
+ 229 0044 7047     		bx	lr
+ 230              	.LVL16:
+ 231              	.L27:
+ 124:Core/Src/testfunktionen.c **** 			break;
+ 232              		.loc 1 124 6 view .LVU41
+ 233 0046 5528     		cmp	r0, #85
+ 234 0048 14BF     		ite	ne
+ 235 004a 5A20     		movne	r0, #90
+ 236              	.LVL17:
+ 124:Core/Src/testfunktionen.c **** 			break;
+ 237              		.loc 1 124 6 view .LVU42
+ 238 004c 4920     		moveq	r0, #73
+ 239 004e 7047     		bx	lr
+ 240              	.LVL18:
+ 241              	.L24:
+ 118:Core/Src/testfunktionen.c **** 			break;
+ 242              		.loc 1 118 6 view .LVU43
+ 243 0050 4720     		movs	r0, #71
+ 244              	.LVL19:
+ 118:Core/Src/testfunktionen.c **** 			break;
+ 245              		.loc 1 118 6 view .LVU44
+ 246 0052 7047     		bx	lr
+ 247              	.LVL20:
+ 248              	.L15:
+ 115:Core/Src/testfunktionen.c **** 			break;
+ 249              		.loc 1 115 4 is_stmt 1 view .LVU45
+ 116:Core/Src/testfunktionen.c **** 		case 86:
+ 250              		.loc 1 116 4 view .LVU46
+ 115:Core/Src/testfunktionen.c **** 			break;
+ 251              		.loc 1 115 6 is_stmt 0 view .LVU47
+ 252 0054 4620     		movs	r0, #70
+ 253              	.LVL21:
+ 116:Core/Src/testfunktionen.c **** 		case 86:
+ 254              		.loc 1 116 4 view .LVU48
+ 255 0056 7047     		bx	lr
+ARM GAS  C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s 			page 8
+
+
+ 256              	.LVL22:
+ 257              	.L20:
+ 106:Core/Src/testfunktionen.c **** 			break;
+ 258              		.loc 1 106 4 is_stmt 1 view .LVU49
+ 107:Core/Src/testfunktionen.c **** 		case 12:
+ 259              		.loc 1 107 4 view .LVU50
+ 106:Core/Src/testfunktionen.c **** 			break;
+ 260              		.loc 1 106 6 is_stmt 0 view .LVU51
+ 261 0058 4320     		movs	r0, #67
+ 107:Core/Src/testfunktionen.c **** 		case 12:
+ 262              		.loc 1 107 4 view .LVU52
+ 263 005a 7047     		bx	lr
+ 264              	.LVL23:
+ 265              	.L19:
+ 109:Core/Src/testfunktionen.c **** 			break;
+ 266              		.loc 1 109 4 is_stmt 1 view .LVU53
+ 110:Core/Src/testfunktionen.c **** 		case 35:
+ 267              		.loc 1 110 4 view .LVU54
+ 109:Core/Src/testfunktionen.c **** 			break;
+ 268              		.loc 1 109 6 is_stmt 0 view .LVU55
+ 269 005c 4420     		movs	r0, #68
+ 110:Core/Src/testfunktionen.c **** 		case 35:
+ 270              		.loc 1 110 4 view .LVU56
+ 271 005e 7047     		bx	lr
+ 272              	.LVL24:
+ 273              	.L18:
+ 121:Core/Src/testfunktionen.c **** 			break;
+ 274              		.loc 1 121 4 is_stmt 1 view .LVU57
+ 122:Core/Src/testfunktionen.c **** 		case 85:
+ 275              		.loc 1 122 4 view .LVU58
+ 121:Core/Src/testfunktionen.c **** 			break;
+ 276              		.loc 1 121 6 is_stmt 0 view .LVU59
+ 277 0060 4820     		movs	r0, #72
+ 122:Core/Src/testfunktionen.c **** 		case 85:
+ 278              		.loc 1 122 4 view .LVU60
+ 279 0062 7047     		bx	lr
+ 280              	.LVL25:
+ 281              	.L17:
+ 112:Core/Src/testfunktionen.c **** 			break;
+ 282              		.loc 1 112 4 is_stmt 1 view .LVU61
+ 113:Core/Src/testfunktionen.c **** 		case 36:
+ 283              		.loc 1 113 4 view .LVU62
+ 112:Core/Src/testfunktionen.c **** 			break;
+ 284              		.loc 1 112 6 is_stmt 0 view .LVU63
+ 285 0064 4520     		movs	r0, #69
+ 113:Core/Src/testfunktionen.c **** 		case 36:
+ 286              		.loc 1 113 4 view .LVU64
+ 287 0066 7047     		bx	lr
+ 288              	.LVL26:
+ 289              	.L23:
+ 100:Core/Src/testfunktionen.c **** 			break;
+ 290              		.loc 1 100 6 view .LVU65
+ 291 0068 4120     		movs	r0, #65
+ 292 006a 7047     		bx	lr
+ 293              	.L21:
+  97:Core/Src/testfunktionen.c **** 	{
+ 294              		.loc 1 97 2 view .LVU66
+ARM GAS  C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s 			page 9
+
+
+ 295 006c 4220     		movs	r0, #66
+ 296 006e 7047     		bx	lr
+ 297              		.cfi_endproc
+ 298              	.LFE3:
+ 300              		.section	.text.Test_Dividier_Zufaellige_Int,"ax",%progbits
+ 301              		.align	1
+ 302              		.p2align 2,,3
+ 303              		.global	Test_Dividier_Zufaellige_Int
+ 304              		.syntax unified
+ 305              		.thumb
+ 306              		.thumb_func
+ 307              		.fpu fpv5-d16
+ 309              	Test_Dividier_Zufaellige_Int:
+ 310              	.LVL27:
+ 311              	.LFB4:
+ 136:Core/Src/testfunktionen.c **** 
+ 137:Core/Src/testfunktionen.c **** int Test_Dividier_Zufaellige_Int(int i)
+ 138:Core/Src/testfunktionen.c **** {
+ 312              		.loc 1 138 1 is_stmt 1 view -0
+ 313              		.cfi_startproc
+ 314              		@ args = 0, pretend = 0, frame = 0
+ 315              		@ frame_needed = 0, uses_anonymous_args = 0
+ 139:Core/Src/testfunktionen.c **** 	int r = 100 + rand();
+ 316              		.loc 1 139 2 view .LVU68
+ 138:Core/Src/testfunktionen.c **** 	int r = 100 + rand();
+ 317              		.loc 1 138 1 is_stmt 0 view .LVU69
+ 318 0000 10B5     		push	{r4, lr}
+ 319              	.LCFI1:
+ 320              		.cfi_def_cfa_offset 8
+ 321              		.cfi_offset 4, -8
+ 322              		.cfi_offset 14, -4
+ 138:Core/Src/testfunktionen.c **** 	int r = 100 + rand();
+ 323              		.loc 1 138 1 view .LVU70
+ 324 0002 0446     		mov	r4, r0
+ 325              		.loc 1 139 16 view .LVU71
+ 326 0004 FFF7FEFF 		bl	rand
+ 327              	.LVL28:
+ 140:Core/Src/testfunktionen.c **** 	int x = r / i;
+ 328              		.loc 1 140 2 is_stmt 1 view .LVU72
+ 141:Core/Src/testfunktionen.c **** 	return x;
+ 329              		.loc 1 141 2 view .LVU73
+ 139:Core/Src/testfunktionen.c **** 	int x = r / i;
+ 330              		.loc 1 139 6 is_stmt 0 view .LVU74
+ 331 0008 6430     		adds	r0, r0, #100
+ 332              	.LVL29:
+ 142:Core/Src/testfunktionen.c **** }
+ 333              		.loc 1 142 1 view .LVU75
+ 334 000a 90FBF4F0 		sdiv	r0, r0, r4
+ 335              	.LVL30:
+ 336              		.loc 1 142 1 view .LVU76
+ 337 000e 10BD     		pop	{r4, pc}
+ 338              		.loc 1 142 1 view .LVU77
+ 339              		.cfi_endproc
+ 340              	.LFE4:
+ 342              		.section	.text.Test_Dividier_Zufaellige_Float,"ax",%progbits
+ 343              		.align	1
+ 344              		.p2align 2,,3
+ARM GAS  C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s 			page 10
+
+
+ 345              		.global	Test_Dividier_Zufaellige_Float
+ 346              		.syntax unified
+ 347              		.thumb
+ 348              		.thumb_func
+ 349              		.fpu fpv5-d16
+ 351              	Test_Dividier_Zufaellige_Float:
+ 352              	.LVL31:
+ 353              	.LFB5:
+ 143:Core/Src/testfunktionen.c **** 
+ 144:Core/Src/testfunktionen.c **** float Test_Dividier_Zufaellige_Float(int i)
+ 145:Core/Src/testfunktionen.c **** {
+ 354              		.loc 1 145 1 is_stmt 1 view -0
+ 355              		.cfi_startproc
+ 356              		@ args = 0, pretend = 0, frame = 0
+ 357              		@ frame_needed = 0, uses_anonymous_args = 0
+ 146:Core/Src/testfunktionen.c **** 	float r = ((float)rand()/RAND_MAX)*(float)(100.0);
+ 358              		.loc 1 146 2 view .LVU79
+ 145:Core/Src/testfunktionen.c **** 	float r = ((float)rand()/RAND_MAX)*(float)(100.0);
+ 359              		.loc 1 145 1 is_stmt 0 view .LVU80
+ 360 0000 08B5     		push	{r3, lr}
+ 361              	.LCFI2:
+ 362              		.cfi_def_cfa_offset 8
+ 363              		.cfi_offset 3, -8
+ 364              		.cfi_offset 14, -4
+ 365 0002 2DED028B 		vpush.64	{d8}
+ 366              	.LCFI3:
+ 367              		.cfi_def_cfa_offset 16
+ 368              		.cfi_offset 80, -16
+ 369              		.cfi_offset 81, -12
+ 145:Core/Src/testfunktionen.c **** 	float r = ((float)rand()/RAND_MAX)*(float)(100.0);
+ 370              		.loc 1 145 1 view .LVU81
+ 371 0006 08EE100A 		vmov	s16, r0	@ int
+ 372              		.loc 1 146 20 view .LVU82
+ 373 000a FFF7FEFF 		bl	rand
+ 374              	.LVL32:
+ 147:Core/Src/testfunktionen.c **** 	float x = r / i;
+ 375              		.loc 1 147 2 is_stmt 1 view .LVU83
+ 148:Core/Src/testfunktionen.c **** 	return x;
+ 376              		.loc 1 148 2 view .LVU84
+ 146:Core/Src/testfunktionen.c **** 	float x = r / i;
+ 377              		.loc 1 146 13 is_stmt 0 view .LVU85
+ 378 000e 07EE100A 		vmov	s14, r0	@ int
+ 146:Core/Src/testfunktionen.c **** 	float x = r / i;
+ 379              		.loc 1 146 8 view .LVU86
+ 380 0012 DFED067A 		vldr.32	s15, .L32
+ 147:Core/Src/testfunktionen.c **** 	float x = r / i;
+ 381              		.loc 1 147 14 view .LVU87
+ 382 0016 B8EEC88A 		vcvt.f32.s32	s16, s16
+ 383              	.LVL33:
+ 146:Core/Src/testfunktionen.c **** 	float x = r / i;
+ 384              		.loc 1 146 13 view .LVU88
+ 385 001a B8EEC70A 		vcvt.f32.s32	s0, s14
+ 146:Core/Src/testfunktionen.c **** 	float x = r / i;
+ 386              		.loc 1 146 8 view .LVU89
+ 387 001e 20EE270A 		vmul.f32	s0, s0, s15
+ 388              	.LVL34:
+ 149:Core/Src/testfunktionen.c **** }
+ARM GAS  C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s 			page 11
+
+
+ 389              		.loc 1 149 1 view .LVU90
+ 390 0022 80EE080A 		vdiv.f32	s0, s0, s16
+ 391              	.LVL35:
+ 392              		.loc 1 149 1 view .LVU91
+ 393 0026 BDEC028B 		vldm	sp!, {d8}
+ 394              	.LCFI4:
+ 395              		.cfi_restore 80
+ 396              		.cfi_restore 81
+ 397              		.cfi_def_cfa_offset 8
+ 398 002a 08BD     		pop	{r3, pc}
+ 399              	.L33:
+ 400              		.align	2
+ 401              	.L32:
+ 402 002c 00004833 		.word	860356608
+ 403              		.cfi_endproc
+ 404              	.LFE5:
+ 406              		.section	.text.Test_Bubble_Sort,"ax",%progbits
+ 407              		.align	1
+ 408              		.p2align 2,,3
+ 409              		.global	Test_Bubble_Sort
+ 410              		.syntax unified
+ 411              		.thumb
+ 412              		.thumb_func
+ 413              		.fpu fpv5-d16
+ 415              	Test_Bubble_Sort:
+ 416              	.LFB6:
+ 150:Core/Src/testfunktionen.c **** 
+ 151:Core/Src/testfunktionen.c **** void Test_Bubble_Sort()
+ 152:Core/Src/testfunktionen.c **** {
+ 417              		.loc 1 152 1 is_stmt 1 view -0
+ 418              		.cfi_startproc
+ 419              		@ args = 0, pretend = 0, frame = 80
+ 420              		@ frame_needed = 0, uses_anonymous_args = 0
+ 153:Core/Src/testfunktionen.c **** 	int array[SORT_ARRAY_SIZE];
+ 421              		.loc 1 153 2 view .LVU93
+ 154:Core/Src/testfunktionen.c **** 	Random_Int_Array(array, SORT_ARRAY_SIZE);
+ 422              		.loc 1 154 2 view .LVU94
+ 152:Core/Src/testfunktionen.c **** 	int array[SORT_ARRAY_SIZE];
+ 423              		.loc 1 152 1 is_stmt 0 view .LVU95
+ 424 0000 30B5     		push	{r4, r5, lr}
+ 425              	.LCFI5:
+ 426              		.cfi_def_cfa_offset 12
+ 427              		.cfi_offset 4, -12
+ 428              		.cfi_offset 5, -8
+ 429              		.cfi_offset 14, -4
+ 430 0002 95B0     		sub	sp, sp, #84
+ 431              	.LCFI6:
+ 432              		.cfi_def_cfa_offset 96
+ 433              	.LVL36:
+ 434              	.LBB7:
+ 435              	.LBI7:
+  15:Core/Src/testfunktionen.c **** {
+ 436              		.loc 1 15 6 is_stmt 1 view .LVU96
+ 437              	.LBE7:
+  17:Core/Src/testfunktionen.c **** 	{
+ 438              		.loc 1 17 2 view .LVU97
+ 439              	.LBB9:
+ARM GAS  C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s 			page 12
+
+
+ 440              	.LBB8:
+  17:Core/Src/testfunktionen.c **** 	{
+ 441              		.loc 1 17 6 view .LVU98
+  17:Core/Src/testfunktionen.c **** 	{
+ 442              		.loc 1 17 17 view .LVU99
+ 443 0004 ADF10405 		sub	r5, sp, #4
+ 444 0008 13AC     		add	r4, sp, #76
+ 445              	.LVL37:
+ 446              	.L35:
+  19:Core/Src/testfunktionen.c **** 	}
+ 447              		.loc 1 19 3 view .LVU100
+  19:Core/Src/testfunktionen.c **** 	}
+ 448              		.loc 1 19 14 is_stmt 0 view .LVU101
+ 449 000a FFF7FEFF 		bl	rand
+ 450              	.LVL38:
+  19:Core/Src/testfunktionen.c **** 	}
+ 451              		.loc 1 19 12 view .LVU102
+ 452 000e 45F8040F 		str	r0, [r5, #4]!
+  17:Core/Src/testfunktionen.c **** 	{
+ 453              		.loc 1 17 27 is_stmt 1 view .LVU103
+  17:Core/Src/testfunktionen.c **** 	{
+ 454              		.loc 1 17 17 view .LVU104
+  17:Core/Src/testfunktionen.c **** 	{
+ 455              		.loc 1 17 2 is_stmt 0 view .LVU105
+ 456 0012 A542     		cmp	r5, r4
+ 457 0014 F9D1     		bne	.L35
+ 458              	.LVL39:
+ 459              	.L38:
+  17:Core/Src/testfunktionen.c **** 	{
+ 460              		.loc 1 17 2 view .LVU106
+ 461              	.LBE8:
+ 462              	.LBE9:
+ 155:Core/Src/testfunktionen.c **** 
+ 156:Core/Src/testfunktionen.c **** 	int a = 0;
+ 157:Core/Src/testfunktionen.c **** 	int b = 1;
+ 158:Core/Src/testfunktionen.c **** 	int switchCount = 0;
+ 159:Core/Src/testfunktionen.c **** 	int temp;
+ 463              		.loc 1 159 2 is_stmt 1 view .LVU107
+ 160:Core/Src/testfunktionen.c **** 
+ 161:Core/Src/testfunktionen.c **** 	do
+ 464              		.loc 1 161 2 view .LVU108
+ 162:Core/Src/testfunktionen.c **** 	{
+ 163:Core/Src/testfunktionen.c **** 		a = 0;
+ 465              		.loc 1 163 3 view .LVU109
+ 164:Core/Src/testfunktionen.c **** 		b = 1;
+ 466              		.loc 1 164 3 view .LVU110
+ 165:Core/Src/testfunktionen.c **** 		switchCount = 0;
+ 467              		.loc 1 165 3 view .LVU111
+ 166:Core/Src/testfunktionen.c **** 		for(;b < SORT_ARRAY_SIZE; a++, b++)
+ 468              		.loc 1 166 3 view .LVU112
+ 469              		.loc 1 166 8 view .LVU113
+ 152:Core/Src/testfunktionen.c **** 	int array[SORT_ARRAY_SIZE];
+ 470              		.loc 1 152 1 is_stmt 0 view .LVU114
+ 471 0016 6B46     		mov	r3, sp
+ 165:Core/Src/testfunktionen.c **** 		switchCount = 0;
+ 472              		.loc 1 165 15 view .LVU115
+ 473 0018 0020     		movs	r0, #0
+ARM GAS  C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s 			page 13
+
+
+ 474              	.LVL40:
+ 475              	.L37:
+ 167:Core/Src/testfunktionen.c **** 		{
+ 168:Core/Src/testfunktionen.c **** 			if(array[a] > array[b])
+ 476              		.loc 1 168 4 is_stmt 1 view .LVU116
+ 169:Core/Src/testfunktionen.c **** 			{
+ 170:Core/Src/testfunktionen.c **** 				temp = array[a];
+ 477              		.loc 1 170 5 view .LVU117
+ 168:Core/Src/testfunktionen.c **** 			{
+ 478              		.loc 1 168 12 is_stmt 0 view .LVU118
+ 479 001a 1A68     		ldr	r2, [r3]
+ 480              	.LVL41:
+ 171:Core/Src/testfunktionen.c **** 				array[a] = array[b];
+ 481              		.loc 1 171 5 is_stmt 1 view .LVU119
+ 168:Core/Src/testfunktionen.c **** 			{
+ 482              		.loc 1 168 23 is_stmt 0 view .LVU120
+ 483 001c 53F8041F 		ldr	r1, [r3, #4]!
+ 168:Core/Src/testfunktionen.c **** 			{
+ 484              		.loc 1 168 6 view .LVU121
+ 485 0020 8A42     		cmp	r2, r1
+ 486 0022 02DD     		ble	.L36
+ 172:Core/Src/testfunktionen.c **** 				array[b] = temp;
+ 173:Core/Src/testfunktionen.c **** 				switchCount++;
+ 487              		.loc 1 173 16 view .LVU122
+ 488 0024 0130     		adds	r0, r0, #1
+ 489              	.LVL42:
+ 172:Core/Src/testfunktionen.c **** 				array[b] = temp;
+ 490              		.loc 1 172 14 view .LVU123
+ 491 0026 43E90112 		strd	r1, r2, [r3, #-4]
+ 492              		.loc 1 173 5 is_stmt 1 view .LVU124
+ 493              	.LVL43:
+ 494              	.L36:
+ 166:Core/Src/testfunktionen.c **** 		{
+ 495              		.loc 1 166 29 view .LVU125
+ 166:Core/Src/testfunktionen.c **** 		{
+ 496              		.loc 1 166 8 view .LVU126
+ 166:Core/Src/testfunktionen.c **** 		{
+ 497              		.loc 1 166 3 is_stmt 0 view .LVU127
+ 498 002a 9C42     		cmp	r4, r3
+ 499 002c F5D1     		bne	.L37
+ 174:Core/Src/testfunktionen.c **** 			}
+ 175:Core/Src/testfunktionen.c **** 		}
+ 176:Core/Src/testfunktionen.c **** 	} while(switchCount > 0);
+ 500              		.loc 1 176 9 is_stmt 1 view .LVU128
+ 501              		.loc 1 176 2 is_stmt 0 view .LVU129
+ 502 002e 0028     		cmp	r0, #0
+ 503 0030 F1D1     		bne	.L38
+ 177:Core/Src/testfunktionen.c **** }
+ 504              		.loc 1 177 1 view .LVU130
+ 505 0032 15B0     		add	sp, sp, #84
+ 506              	.LCFI7:
+ 507              		.cfi_def_cfa_offset 12
+ 508              		@ sp needed
+ 509 0034 30BD     		pop	{r4, r5, pc}
+ 510              		.cfi_endproc
+ 511              	.LFE6:
+ 513 0036 00BF     		.section	.rodata.Test_printf.str1.4,"aMS",%progbits,1
+ARM GAS  C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s 			page 14
+
+
+ 514              		.align	2
+ 515              	.LC1:
+ 516 0000 48656C6C 		.ascii	"Hello STM32H743ZI\000"
+ 516      6F205354 
+ 516      4D333248 
+ 516      3734335A 
+ 516      4900
+ 517              		.section	.text.Test_printf,"ax",%progbits
+ 518              		.align	1
+ 519              		.p2align 2,,3
+ 520              		.global	Test_printf
+ 521              		.syntax unified
+ 522              		.thumb
+ 523              		.thumb_func
+ 524              		.fpu fpv5-d16
+ 526              	Test_printf:
+ 527              	.LFB7:
+ 178:Core/Src/testfunktionen.c **** 
+ 179:Core/Src/testfunktionen.c **** void Test_printf()
+ 180:Core/Src/testfunktionen.c **** {
+ 528              		.loc 1 180 1 is_stmt 1 view -0
+ 529              		.cfi_startproc
+ 530              		@ args = 0, pretend = 0, frame = 0
+ 531              		@ frame_needed = 0, uses_anonymous_args = 0
+ 532              		@ link register save eliminated.
+ 181:Core/Src/testfunktionen.c **** 	printf("Hello STM32H743ZI\n");
+ 533              		.loc 1 181 2 view .LVU132
+ 534 0000 0148     		ldr	r0, .L44
+ 535 0002 FFF7FEBF 		b	puts
+ 536              	.LVL44:
+ 537              	.L45:
+ 538 0006 00BF     		.align	2
+ 539              	.L44:
+ 540 0008 00000000 		.word	.LC1
+ 541              		.cfi_endproc
+ 542              	.LFE7:
+ 544              		.text
+ 545              	.Letext0:
+ 546              		.file 2 "<built-in>"
+ 547              		.file 3 "c:\\dev\\tools\\gcc-arm-none-eabi-10.3-2021.07\\arm-none-eabi\\include\\stdlib.h"
+ARM GAS  C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s 			page 15
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 testfunktionen.c
+C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s:15     .text.Random_Int_Array:00000000 $t
+C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s:24     .text.Random_Int_Array:00000000 Random_Int_Array
+C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s:80     .text.Test_Matrix_Dot_Produkt:00000000 $t
+C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s:88     .text.Test_Matrix_Dot_Produkt:00000000 Test_Matrix_Dot_Produkt
+C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s:106    .text.Test_Switch_Case_Seq:00000000 $t
+C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s:114    .text.Test_Switch_Case_Seq:00000000 Test_Switch_Case_Seq
+C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s:146    .text.Test_Switch_Case_Nicht_Seq:00000000 $t
+C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s:154    .text.Test_Switch_Case_Nicht_Seq:00000000 Test_Switch_Case_Nicht_Seq
+C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s:175    .text.Test_Switch_Case_Nicht_Seq:00000012 $d
+C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s:212    .text.Test_Switch_Case_Nicht_Seq:00000036 $t
+C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s:301    .text.Test_Dividier_Zufaellige_Int:00000000 $t
+C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s:309    .text.Test_Dividier_Zufaellige_Int:00000000 Test_Dividier_Zufaellige_Int
+C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s:343    .text.Test_Dividier_Zufaellige_Float:00000000 $t
+C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s:351    .text.Test_Dividier_Zufaellige_Float:00000000 Test_Dividier_Zufaellige_Float
+C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s:402    .text.Test_Dividier_Zufaellige_Float:0000002c $d
+C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s:407    .text.Test_Bubble_Sort:00000000 $t
+C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s:415    .text.Test_Bubble_Sort:00000000 Test_Bubble_Sort
+C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s:514    .rodata.Test_printf.str1.4:00000000 $d
+C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s:518    .text.Test_printf:00000000 $t
+C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s:526    .text.Test_printf:00000000 Test_printf
+C:\Users\MadeuxS\AppData\Local\Temp\ccxeITeO.s:540    .text.Test_printf:00000008 $d
+
+UNDEFINED SYMBOLS
+rand
+puts
