@@ -176,3 +176,7 @@ void Test_Bubble_Sort()
 	} while(switchCount > 0);
 }
 
+void Test_printf()
+{
+	printf("Hello STM32H743ZI\n");
+}

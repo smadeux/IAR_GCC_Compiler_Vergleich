@@ -8,6 +8,7 @@ char Test_Switch_Case_Nicht_Seq(int num);
 int Test_Dividier_Zufaellige_Int(int i);
 float Test_Dividier_Zufaellige_Float(int i);
 void Test_Bubble_Sort();
+void Test_printf();
 
 
 #endif
